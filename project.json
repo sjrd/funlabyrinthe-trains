@@ -1,0 +1,12 @@
+{
+  "dependencies": [
+    "funlaby:sjrd/railways/local-current",
+    "funlaby:sjrd/simplebridges/local-current"
+  ],
+  "modules": [
+    "com.funlabyrinthe.mazes.Mazes",
+    "user.sjrd.railways.Railways",
+    "myfunlaby.SimpleBridges",
+    "myfunlaby.Trains"
+  ]
+}

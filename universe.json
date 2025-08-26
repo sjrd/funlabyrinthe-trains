@@ -1,0 +1,905 @@
+{
+  "players": [ "player", ],
+  "additionalComponents": {
+    "com.funlabyrinthe.mazes.Mazes:mapCreator": [ "map1", ],
+    "com.funlabyrinthe.mazes.Mazes:transporterCreator": [],
+    "com.funlabyrinthe.mazes.Mazes:boatCreator": [],
+    "myfunlaby.SimpleBridges:simpleBridgeCreator": [ "simpleBridge1", "simpleBridge2", "simpleBridge3", "simpleBridge4", "simpleBridge5", "simpleBridge6", "simpleBridge7", "simpleBridge8", "simpleBridge9", "simpleBridge10", "simpleBridge11", "simpleBridge12", "simpleBridge13", "simpleBridge14", "simpleBridge15", "simpleBridge16", "simpleBridge17", "simpleBridge18", "simpleBridge19", "simpleBridge20", "simpleBridge21", "simpleBridge22", "simpleBridge23", "simpleBridge24", "simpleBridge25", "simpleBridge26", "simpleBridge27", "simpleBridge28", "simpleBridge29", "simpleBridge30", "simpleBridge31", "simpleBridge32", "simpleBridge33", "simpleBridge34", ],
+    "user.sjrd.railways.Railways:railsCreator": [ "rails1", "rails2", "rails3", "rails4", "rails5", "rails6", "rails7", "rails8", "rails9", "rails10", "rails11", "rails12", "rails13", "rails14", "rails15", "rails16", "rails17", "rails18", ],
+    "user.sjrd.railways.Railways:railsLightCreator": [ "railsLight1", "railsLight2", "railsLight3", "railsLight4", "railsLight5", "railsLight6", "railsLight7", "railsLight8", ],
+    "user.sjrd.railways.Railways:locomotiveCreator": [ "locomotive1", "locomotive2", "locomotive3", ],
+    "user.sjrd.railways.Railways:carriageCreator": [ "carriage1", "carriage2", "carriage3", "carriage4", "carriage5", "carriage6", "carriage7", "carriage8", "carriage9", ],
+  },
+  "components": {
+    "user.sjrd.railways.Railways:carriageCreator:carriage1": {
+      "tracks": [ "user.sjrd.railways.Railways:carriageCreator:carriage2", ],
+      "previousDirection": "West",
+      "direction": "West",
+      "locomotive": [ "user.sjrd.railways.Railways:locomotiveCreator:locomotive1", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 2, 0, 0, ],
+        ],
+      ],
+    },
+    "user.sjrd.railways.Railways:carriageCreator:carriage2": {
+      "tracks": [ "user.sjrd.railways.Railways:carriageCreator:carriage3", ],
+      "previousDirection": "West",
+      "direction": "West",
+      "locomotive": [ "user.sjrd.railways.Railways:locomotiveCreator:locomotive1", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 3, 0, 0, ],
+        ],
+      ],
+    },
+    "user.sjrd.railways.Railways:carriageCreator:carriage3": {
+      "previousDirection": "West",
+      "direction": "West",
+      "locomotive": [ "user.sjrd.railways.Railways:locomotiveCreator:locomotive1", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 4, 0, 0, ],
+        ],
+      ],
+    },
+    "user.sjrd.railways.Railways:carriageCreator:carriage4": {
+      "tracks": [ "user.sjrd.railways.Railways:carriageCreator:carriage5", ],
+      "locomotive": [ "user.sjrd.railways.Railways:locomotiveCreator:locomotive2", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 6, 12, 0, ],
+        ],
+      ],
+    },
+    "user.sjrd.railways.Railways:carriageCreator:carriage5": {
+      "tracks": [ "user.sjrd.railways.Railways:carriageCreator:carriage6", ],
+      "locomotive": [ "user.sjrd.railways.Railways:locomotiveCreator:locomotive2", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 6, 13, 0, ],
+        ],
+      ],
+    },
+    "user.sjrd.railways.Railways:carriageCreator:carriage6": {
+      "locomotive": [ "user.sjrd.railways.Railways:locomotiveCreator:locomotive2", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 6, 14, 0, ],
+        ],
+      ],
+    },
+    "user.sjrd.railways.Railways:carriageCreator:carriage7": {
+      "tracks": [ "user.sjrd.railways.Railways:carriageCreator:carriage8", ],
+      "locomotive": [ "user.sjrd.railways.Railways:locomotiveCreator:locomotive3", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 13, 22, 0, ],
+        ],
+      ],
+    },
+    "user.sjrd.railways.Railways:carriageCreator:carriage8": {
+      "tracks": [ "user.sjrd.railways.Railways:carriageCreator:carriage9", ],
+      "locomotive": [ "user.sjrd.railways.Railways:locomotiveCreator:locomotive3", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 13, 23, 0, ],
+        ],
+      ],
+    },
+    "user.sjrd.railways.Railways:carriageCreator:carriage9": {
+      "previousDirection": "East",
+      "locomotive": [ "user.sjrd.railways.Railways:locomotiveCreator:locomotive3", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 13, 24, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.Trains:centerAccessButton": {
+      "downPainter": [
+        {
+          "ImageDescription": "Buttons/BlueSunkenButton",
+        },
+      ],
+      "painter": [
+        {
+          "ImageDescription": "Buttons/BlueButton",
+        },
+      ],
+    },
+    "myfunlaby.Trains:closeGateButton": {
+      "downPainter": [
+        {
+          "ImageDescription": "Buttons/RedSunkenButton",
+        },
+      ],
+      "painter": [
+        {
+          "ImageDescription": "Buttons/RedButton",
+        },
+      ],
+    },
+    "com.funlabyrinthe.core.Core:player:com.funlabyrinthe.mazes.Player": {
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 17, 26, 0, ],
+        ],
+      ],
+    },
+    "user.sjrd.railways.Railways:locomotiveCreator:locomotive1": {
+      "delay": 350,
+      "tracks": [ "user.sjrd.railways.Railways:carriageCreator:carriage1", ],
+      "previousDirection": "West",
+      "nextMoveQueue": [],
+      "direction": "West",
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 1, 0, 0, ],
+        ],
+      ],
+    },
+    "user.sjrd.railways.Railways:locomotiveCreator:locomotive2": {
+      "tracks": [ "user.sjrd.railways.Railways:carriageCreator:carriage4", ],
+      "nextMoveQueue": [],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 6, 11, 0, ],
+        ],
+      ],
+    },
+    "user.sjrd.railways.Railways:locomotiveCreator:locomotive3": {
+      "tracks": [ "user.sjrd.railways.Railways:carriageCreator:carriage7", ],
+      "nextMoveQueue": [],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 13, 21, 0, ],
+        ],
+      ],
+    },
+    "com.funlabyrinthe.mazes.Mazes:mapCreator:map1": {
+      "zoneHeight": 9,
+      "zoneWidth": 9,
+      "map": {
+        "dimensions": [ 18, 27, 1, ],
+        "palette": [
+          [ "user.sjrd.railways.Railways:railsCreator:rails7", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails15", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails1", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails9", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails2", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:water", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "myfunlaby.Trains:station", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "com.funlabyrinthe.mazes.Mazes:eastArrow", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails10", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails13", "user.sjrd.railways.Railways:railsLightCreator:railsLight7", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails3", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails11", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails6", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "myfunlaby.Trains:station", "com.funlabyrinthe.mazes.Mazes:crossroads", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "myfunlaby.Trains:station", "com.funlabyrinthe.mazes.Mazes:southArrow", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "com.funlabyrinthe.mazes.Mazes:westArrow", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails14", "user.sjrd.railways.Railways:railsLightCreator:railsLight6", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:wall", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "com.funlabyrinthe.mazes.Mazes:northArrow", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:goldenKey", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "myfunlaby.Trains:trainSwitch", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails12", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails18", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "com.funlabyrinthe.mazes.Mazes:crossroads", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "myfunlaby.Trains:station", "com.funlabyrinthe.mazes.Mazes:westArrow", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "myfunlaby.Trains:station", "com.funlabyrinthe.mazes.Mazes:eastArrow", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails4", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "com.funlabyrinthe.mazes.Mazes:southArrow", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "myfunlaby.Trains:centerAccessButton", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails14", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails16", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "myfunlaby.Trains:station", "com.funlabyrinthe.mazes.Mazes:northArrow", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails5", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails17", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails10", "user.sjrd.railways.Railways:railsLightCreator:railsLight4", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails8", "user.sjrd.railways.Railways:railsLightCreator:railsLight5", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails2", "user.sjrd.railways.Railways:railsLightCreator:railsLight2", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:silverKey", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails2", "user.sjrd.railways.Railways:railsLightCreator:railsLight3", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails8", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "myfunlaby.Trains:whistle", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails14", "user.sjrd.railways.Railways:railsLightCreator:railsLight8", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "user.sjrd.railways.Railways:railsCreator:rails14", "user.sjrd.railways.Railways:railsLightCreator:railsLight1", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:goldenBlock", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:silverBlock", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "myfunlaby.Trains:openGate", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "com.funlabyrinthe.mazes.Mazes:treasure", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "myfunlaby.Trains:closeGateButton", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "myfunlaby.Trains:openGateButton", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+        ],
+        "map": [
+          [
+            [ 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4, 4, ],
+            [ 5, 6, 7, 7, 6, 4, 7, 8, 4, 4, 4, 4, 4, 4, 4, 5, 4, 4, ],
+            [ 5, 6, 6, 6, 6, 7, 9, 1, 2, 2, 2, 2, 2, 10, 2, 11, 2, 12, ],
+            [ 13, 12, 4, 6, 6, 14, 5, 15, 4, 4, 4, 4, 16, 5, 4, 17, 4, 5, ],
+            [ 4, 5, 4, 6, 6, 7, 5, 7, 18, 19, 6, 6, 6, 5, 15, 5, 7, 5, ],
+            [ 4, 5, 4, 6, 6, 4, 5, 4, 18, 20, 6, 6, 6, 5, 7, 5, 15, 5, ],
+            [ 19, 5, 4, 6, 6, 21, 22, 2, 2, 2, 2, 2, 2, 23, 18, 5, 7, 5, ],
+            [ 4, 5, 24, 16, 4, 8, 5, 4, 4, 24, 25, 15, 26, 4, 9, 27, 4, 5, ],
+            [ 28, 5, 4, 18, 19, 24, 5, 4, 18, 4, 18, 4, 18, 4, 5, 18, 4, 5, ],
+            [ 4, 5, 4, 18, 24, 19, 5, 4, 18, 4, 18, 29, 18, 4, 5, 18, 4, 5, ],
+            [ 4, 5, 4, 18, 4, 4, 5, 19, 4, 24, 4, 16, 4, 24, 5, 4, 19, 5, ],
+            [ 4, 5, 4, 18, 18, 4, 30, 0, 2, 2, 2, 2, 2, 2, 11, 2, 31, 5, ],
+            [ 4, 5, 24, 4, 18, 32, 5, 5, 26, 24, 4, 4, 19, 24, 5, 18, 5, 5, ],
+            [ 0, 33, 4, 24, 4, 25, 5, 5, 18, 19, 18, 18, 18, 4, 5, 18, 5, 5, ],
+            [ 5, 4, 18, 4, 18, 15, 5, 5, 26, 4, 18, 18, 28, 4, 5, 15, 5, 5, ],
+            [ 5, 4, 16, 4, 18, 4, 5, 34, 2, 2, 2, 12, 4, 35, 11, 2, 27, 30, ],
+            [ 5, 4, 18, 28, 18, 4, 5, 4, 8, 24, 4, 5, 24, 5, 5, 4, 4, 5, ],
+            [ 5, 4, 18, 4, 18, 18, 5, 28, 18, 28, 18, 5, 4, 5, 36, 2, 3, 5, ],
+            [ 5, 4, 18, 4, 18, 18, 5, 4, 18, 4, 18, 37, 4, 5, 4, 4, 5, 5, ],
+            [ 5, 4, 18, 4, 4, 4, 5, 4, 4, 4, 16, 5, 38, 5, 28, 18, 5, 39, ],
+            [ 5, 4, 18, 18, 19, 18, 40, 2, 2, 2, 2, 11, 2, 11, 2, 2, 11, 33, ],
+            [ 5, 4, 4, 4, 4, 8, 4, 24, 4, 4, 41, 5, 4, 42, 4, 4, 43, 4, ],
+            [ 5, 18, 18, 28, 18, 18, 0, 2, 2, 2, 2, 33, 18, 5, 26, 7, 5, 18, ],
+            [ 5, 44, 4, 24, 45, 4, 5, 24, 4, 46, 4, 4, 7, 5, 18, 7, 5, 7, ],
+            [ 5, 4, 18, 4, 18, 28, 13, 2, 2, 2, 2, 2, 2, 27, 18, 7, 5, 7, ],
+            [ 5, 47, 18, 4, 4, 4, 4, 4, 4, 4, 48, 49, 4, 14, 4, 4, 5, 4, ],
+            [ 13, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 27, 4, ],
+          ],
+        ],
+        "outside": [ 18, ],
+      },
+    },
+    "myfunlaby.Trains:openGateButton": {
+      "enabled": false,
+      "downPainter": [
+        {
+          "ImageDescription": "Buttons/GreenSunkenButton",
+        },
+      ],
+      "painter": [
+        {
+          "ImageDescription": "Buttons/GreenButton",
+        },
+      ],
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails1": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/Horizontal",
+        },
+      ],
+      "editVisualTag": "",
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails10": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/BottomToRight",
+        },
+      ],
+      "direction": [ "East", ],
+      "editVisualTag": "🡒",
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails11": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/BottomToLeft",
+        },
+      ],
+      "direction": [ "South", ],
+      "editVisualTag": "🡓",
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails12": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/BottomToTopRight",
+        },
+      ],
+      "direction": [ "East", ],
+      "editVisualTag": "",
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails13": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/RightToBottomLeft",
+        },
+      ],
+      "direction": [ "East", ],
+      "editVisualTag": "",
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails14": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/Vertical",
+        },
+      ],
+      "isStop": true,
+      "editVisualTag": "T1",
+      "additionalDelay": 3000,
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails15": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/Horizontal",
+        },
+      ],
+      "isStop": true,
+      "editVisualTag": "T2",
+      "additionalDelay": 3000,
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails16": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/BottomToLeft",
+        },
+      ],
+      "direction": [ "West", ],
+      "isStop": true,
+      "editVisualTag": "🡐T",
+      "additionalDelay": 10000,
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails17": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/TopToRight",
+        },
+      ],
+      "direction": [ "East", ],
+      "isStop": true,
+      "editVisualTag": "T🡒",
+      "additionalDelay": 10000,
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails18": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/TopToLeft",
+        },
+      ],
+      "direction": [ "North", ],
+      "isStop": true,
+      "editVisualTag": "T🡑",
+      "additionalDelay": 3000,
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails2": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/Vertical",
+        },
+      ],
+      "editVisualTag": "",
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails3": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/Horizontal",
+        },
+        {
+          "ImageDescription": "Rails/Vertical",
+        },
+      ],
+      "editVisualTag": "",
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails4": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/TopToLeft",
+        },
+      ],
+      "direction": [ "North", ],
+      "editVisualTag": "🡑",
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails5": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/TopToLeft",
+        },
+      ],
+      "direction": [ "West", ],
+      "editVisualTag": "🡐",
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails6": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/TopToRight",
+        },
+      ],
+      "direction": [ "East", ],
+      "editVisualTag": "🡒",
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails7": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/BottomToRight",
+        },
+      ],
+      "direction": [ "South", ],
+      "editVisualTag": "🡓",
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails8": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/TopToRight",
+        },
+      ],
+      "direction": [ "North", ],
+      "editVisualTag": "🡑",
+    },
+    "user.sjrd.railways.Railways:railsCreator:rails9": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/BottomToLeft",
+        },
+      ],
+      "direction": [ "West", ],
+      "editVisualTag": "🡐",
+    },
+    "user.sjrd.railways.Railways:railsLightCreator:railsLight1": {
+      "turnLightOnOffQueue": [],
+      "nextLight": [ "user.sjrd.railways.Railways:railsLightCreator:railsLight3", ],
+      "delay": 2000,
+      "delayBeforeNextLight": 1500,
+      "mirror": [ "user.sjrd.railways.Railways:railsLightCreator:railsLight2", ],
+      "editVisualTag": "11",
+    },
+    "user.sjrd.railways.Railways:railsLightCreator:railsLight2": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/LightOffSouth",
+        },
+      ],
+      "turnLightOnOffQueue": [],
+      "editVisualTag": "11m",
+      "onPainter": [
+        {
+          "ImageDescription": "Rails/LightOnSouth",
+        },
+      ],
+    },
+    "user.sjrd.railways.Railways:railsLightCreator:railsLight3": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/LightOffSouth",
+        },
+      ],
+      "turnLightOnOffQueue": [],
+      "nextLight": [ "user.sjrd.railways.Railways:railsLightCreator:railsLight1", ],
+      "delay": 2000,
+      "delayBeforeNextLight": 3500,
+      "editVisualTag": "12",
+      "onPainter": [
+        {
+          "ImageDescription": "Rails/LightOnSouth",
+        },
+      ],
+      "isOn": true,
+    },
+    "user.sjrd.railways.Railways:railsLightCreator:railsLight4": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/LightOffEastMirror",
+        },
+      ],
+      "turnLightOnOffQueue": [],
+      "nextLight": [ "user.sjrd.railways.Railways:railsLightCreator:railsLight5", ],
+      "delay": 3000,
+      "delayBeforeNextLight": 3000,
+      "editVisualTag": "21",
+      "onPainter": [
+        {
+          "ImageDescription": "Rails/LightOnEastMirror",
+        },
+      ],
+    },
+    "user.sjrd.railways.Railways:railsLightCreator:railsLight5": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/LightOffNorthMirror",
+        },
+      ],
+      "turnLightOnOffQueue": [],
+      "nextLight": [ "user.sjrd.railways.Railways:railsLightCreator:railsLight4", ],
+      "delay": 3000,
+      "delayBeforeNextLight": 3000,
+      "editVisualTag": "22",
+      "onPainter": [
+        {
+          "ImageDescription": "Rails/LightOnNorthMirror",
+        },
+      ],
+      "isOn": true,
+    },
+    "user.sjrd.railways.Railways:railsLightCreator:railsLight6": {
+      "turnLightOnOffQueue": [],
+      "nextLight": [ "user.sjrd.railways.Railways:railsLightCreator:railsLight7", ],
+      "delay": 2100,
+      "delayBeforeNextLight": 1500,
+      "editVisualTag": "31",
+    },
+    "user.sjrd.railways.Railways:railsLightCreator:railsLight7": {
+      "painter": [
+        {
+          "ImageDescription": "Rails/LightOffEastMirror",
+        },
+      ],
+      "turnLightOnOffQueue": [],
+      "nextLight": [ "user.sjrd.railways.Railways:railsLightCreator:railsLight6", ],
+      "delay": 2000,
+      "delayBeforeNextLight": 2500,
+      "editVisualTag": "32",
+      "onPainter": [
+        {
+          "ImageDescription": "Rails/LightOnEastMirror",
+        },
+      ],
+      "isOn": true,
+    },
+    "user.sjrd.railways.Railways:railsLightCreator:railsLight8": {
+      "turnLightOnOffQueue": [],
+      "editVisualTag": "0",
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge1": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 15, 1, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge10": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 1, 7, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge11": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 6, 7, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge12": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 6, 10, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge13": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 14, 10, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge14": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 9, 11, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge15": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 12, 11, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge16": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 13, 11, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge17": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 1, 12, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge18": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 14, 14, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge19": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 9, 15, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge2": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 2, 2, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge20": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 15, 15, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge21": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 6, 16, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge22": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 11, 16, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge23": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 13, 16, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge24": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 14, 16, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge25": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 15, 17, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge26": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 6, 19, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge27": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 11, 19, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge28": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 7, 20, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge29": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 10, 20, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge3": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 14, 2, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge30": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 14, 20, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge31": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 7, 22, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge32": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 6, 23, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge33": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 7, 24, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge34": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 10, 24, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge4": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 16, 2, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge5": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 13, 3, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge6": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 1, 4, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge7": {
+      "editVisualTag": "",
+      "openings": [ "East", "West", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 6, 5, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge8": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 7, 6, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.SimpleBridges:simpleBridgeCreator:simpleBridge9": {
+      "editVisualTag": "",
+      "openings": [ "North", "South", ],
+      "position": [
+        [
+          "com.funlabyrinthe.mazes.Mazes:mapCreator:map1",
+          [ 9, 6, 0, ],
+        ],
+      ],
+    },
+    "myfunlaby.Trains:trainSwitch": {
+      "railsSwitch": [ "user.sjrd.railways.Railways:railsCreator:rails12", ],
+    },
+    "com.funlabyrinthe.mazes.Mazes:wall": {
+      "painter": [
+        {
+          "ImageDescription": "Fields/BrickBuiltWall",
+        },
+      ],
+    },
+    "myfunlaby.Trains:whistle": {
+      "newLight": [ "user.sjrd.railways.Railways:railsLightCreator:railsLight1", ],
+    },
+  },
+}
