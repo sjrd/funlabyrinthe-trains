@@ -6,6 +6,7 @@
     "com.funlabyrinthe.mazes.Mazes:boatCreator": [],
     "myfunlaby.SimpleBridges:simpleBridgeCreator": [ "simpleBridge1", "simpleBridge2", "simpleBridge3", "simpleBridge4", "simpleBridge5", "simpleBridge6", "simpleBridge7", "simpleBridge8", "simpleBridge9", "simpleBridge10", "simpleBridge11", "simpleBridge12", "simpleBridge13", "simpleBridge14", "simpleBridge15", "simpleBridge16", "simpleBridge17", "simpleBridge18", "simpleBridge19", "simpleBridge20", "simpleBridge21", "simpleBridge22", "simpleBridge23", "simpleBridge24", "simpleBridge25", "simpleBridge26", "simpleBridge27", "simpleBridge28", "simpleBridge29", "simpleBridge30", "simpleBridge31", "simpleBridge32", "simpleBridge33", "simpleBridge34", ],
     "user.sjrd.railways.Railways:railsCreator": [ "railsHorizontal", "railsVertical", "railsCrossroads", "railsLeftToUp", "railsUpToLeft", "railsUpToRight", "railsRightToDown", "railsRightToUp", "railsDownToLeft", "railsDownToRight", "railsLeftToDown", "railsSwitchNorthOrEast", "railsLeftOrDownToRight", "stopVertical", "stopHorizontal", "stopDownToLeft", "stopUpToRight", "stopLeftToUp", ],
+    "user.sjrd.railways.Railways:railsSwitchCreator": [ "railsSwitch1", ],
     "user.sjrd.railways.Railways:railsLightCreator": [ "railsLight11", "railsLight11Mirror", "railsLight12", "railsLight21", "railsLight22", "railsLight31", "railsLight32", "railsLightAlwaysRed", ],
     "user.sjrd.railways.Railways:locomotiveCreator": [ "locomotive1", "locomotive2", "locomotive3", ],
     "user.sjrd.railways.Railways:carriageCreator": [ "carriage11", "carriage12", "carriage13", "carriage21", "carriage22", "carriage23", "carriage31", "carriage32", "carriage33", ],
@@ -209,7 +210,7 @@
           [ "com.funlabyrinthe.mazes.Mazes:wall", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
           [ "com.funlabyrinthe.mazes.Mazes:grass", "com.funlabyrinthe.mazes.Mazes:northArrow", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
           [ "com.funlabyrinthe.mazes.Mazes:grass", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:goldenKey", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
-          [ "com.funlabyrinthe.mazes.Mazes:grass", "myfunlaby.Trains:trainSwitch", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
+          [ "com.funlabyrinthe.mazes.Mazes:grass", "user.sjrd.railways.Railways:railsSwitchCreator:railsSwitch1", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
           [ "user.sjrd.railways.Railways:railsCreator:railsSwitchNorthOrEast", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
           [ "user.sjrd.railways.Railways:railsCreator:stopLeftToUp", "com.funlabyrinthe.mazes.Mazes:noEffect", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
           [ "com.funlabyrinthe.mazes.Mazes:grass", "com.funlabyrinthe.mazes.Mazes:crossroads", "com.funlabyrinthe.mazes.Mazes:noTool", "com.funlabyrinthe.mazes.Mazes:noObstacle", ],
@@ -466,6 +467,12 @@
       ],
       "direction": [ "North", ],
       "editVisualTag": "🡑",
+    },
+    "user.sjrd.railways.Railways:railsSwitchCreator:railsSwitch1": {
+      "targetRails": [ "user.sjrd.railways.Railways:railsCreator:railsSwitchNorthOrEast", ],
+      "offDirection": [ "East", ],
+      "onDirection": [ "North", ],
+      "editVisualTag": "",
     },
     "user.sjrd.railways.Railways:railsCreator:railsSwitchNorthOrEast": {
       "painter": [
@@ -892,9 +899,6 @@
       "isStop": true,
       "editVisualTag": "T",
       "additionalDelay": 3000,
-    },
-    "myfunlaby.Trains:trainSwitch": {
-      "railsSwitch": [ "user.sjrd.railways.Railways:railsCreator:railsSwitchNorthOrEast", ],
     },
     "com.funlabyrinthe.mazes.Mazes:wall": {
       "painter": [

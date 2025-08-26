@@ -10,7 +10,6 @@ object Trains extends Module:
   override protected def createComponents()(using Universe): Unit =
     val station = new Station
     val whistle = new Whistle
-    val trainSwitch = new TrainSwitch
     val closedGate = new ClosedGate
     val openGate = new OpenGate
     val closeGateButton = new CloseGateButton
@@ -20,7 +19,6 @@ object Trains extends Module:
 
   def station(using Universe): Station = myComponentByID("station")
   def whistle(using Universe): Whistle = myComponentByID("whistle")
-  def trainSwitch(using Universe): TrainSwitch = myComponentByID("trainSwitch")
   def closedGate(using Universe): ClosedGate = myComponentByID("closedGate")
   def openGate(using Universe): OpenGate = myComponentByID("openGate")
   def closeGateButton(using Universe): CloseGateButton = myComponentByID("closeGateButton")
@@ -47,23 +45,6 @@ class Whistle(using ComponentInit) extends PushButton derives Reflector:
     pos.map(13, 21, 0) += newLight.get
   end execute
 end Whistle
-
-class TrainSwitch(using ComponentInit) extends Switch derives Reflector:
-  var railsSwitch: Option[Rails] = None
-
-  override def reflect() = autoReflect[TrainSwitch]
-
-  override def switchOn(context: MoveContext): Unit =
-    railsSwitch.get.direction = Some(Direction.North)
-
-  override def switchOff(context: MoveContext): Unit =
-    railsSwitch.get.direction = Some(Direction.East)
-
-  override def execute(context: MoveContext): Unit =
-    import context.*
-    if pos.map.posComponentsBottomUp(Position(6, 6, 0)).isEmpty then
-      super.execute(context)
-end TrainSwitch
 
 class ClosedGate(using ComponentInit) extends Obstacle:
   painter += "Gates/ClosedPorch"
